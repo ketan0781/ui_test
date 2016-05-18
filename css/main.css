@@ -1,0 +1,640 @@
+body {
+    width: 896px;
+    height: 100%;
+    min-height: 100%;
+    margin: 0 auto;
+    padding: 50px 0px 0;
+    line-height: 1;
+    color: #333;
+    background: #FFF;
+    font-family: ff-tisa-web-pro, Georgia, sans-serif;
+    -webkit-text-size-adjust: 100%;
+}
+
+#wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background: #FFF;
+}
+
+header[role="masthead"] {
+    float: left;
+    width: 160px;
+    margin-bottom: 25px;
+}
+
+#content {
+    position: relative;
+    float: right;
+    width: 712px;
+}
+
+h1#branding {
+    display: block;
+    width: 120px;
+    height: 120px;
+    text-indent: -999em;
+    background: url(../images/food-sense.png) no-repeat 0 0;
+    margin: 0 auto;
+}
+
+li#tastemakers a {
+    background-image: url(../images/tastemakers.png);
+}
+
+li#blog a {
+    background-image: url(../images/blog.png);
+}
+
+li#vendors a {
+    background-image: url(../images/alist.png);
+}
+
+li#contribute a {
+    background-image: url(../images/contribute.png);
+}
+
+li#about a {
+    background-image: url(../images/about.png);
+}
+
+nav {
+    margin-top: 30px;
+}
+
+nav li {
+    display: block;
+    margin-bottom: 18px;
+    line-height: 1.3em;
+}
+
+nav li a {
+    background-position: 0 65%;
+    background-repeat: no-repeat;
+}
+
+nav a {
+    display: block;
+    height: 28px;
+    padding: 4px 0 0 44px;
+    font-style: italic;
+    color: #222;
+}
+
+#featured img {
+    height: 445px;
+}
+
+#cover {
+    position: relative;
+}
+
+#cover a {
+    position: absolute;
+    z-index: 1;
+    bottom: 40px;
+    right:0;
+}
+
+/* #cover a h1,
+#cover a h2 {
+    left: auto;
+    right: 184px;
+} */
+
+#cover a h1 {
+    top: 285px;
+    padding: 10px 24px 15px;
+    color: #222;
+    background: #FFF;
+    font-size: 1.5em;
+}
+
+#cover a h2 {
+    top: 334px;
+    padding: 8px 24px 12px;
+    color: #E9E9E9;
+    font-weight: normal;
+    font-size: 1em;
+    background: #111;
+}
+
+#newsletter {
+    overflow: hidden;
+    clear: both;
+    width: 100%;
+    min-height: 48px;
+    margin-bottom: 29px;
+    line-height: 1em;
+    border-top: 1px dashed #E5E5E5;
+    border-bottom: 1px dashed #E5E5E5;
+    background: url(../images/icon-mailinglist-32.png) no-repeat 18px 7px;
+
+}
+
+.no-js #newsletter p {
+    padding-bottom: 10px;
+}
+
+#newsletter p {
+    float: left;
+    width: 60%;
+    padding: 7px 24px 0 66px;
+    font-size: .75em;
+    font-style: italic;
+}
+
+#newsletter form {
+    float: left;
+    display: block;
+    margin-top: 11px;
+}
+
+#newsletter fieldset {
+    display: inline;
+}
+
+#featured {
+    position: relative;
+    width: 100%;
+    height: 510px;
+}
+
+#featured #nav li {
+    float: left;
+    text-align: center;
+}
+
+#featured #nav {
+    position: absolute;
+    top: 445px;
+    width: 712px;
+    background: #EFF8F7;
+    overflow: hidden;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-bottom-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    -moz-border-bottom-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+#featured #nav a {
+    display: block;
+    float: left;
+    width: 177px;
+    height: 25px;
+    padding: 8px 0 30px 2px;
+    line-height: 1.1em;
+    color: #60BEAE;
+    border-right: 1px solid #D3EDE9;
+    text-shadow: 0 1px 0 #FFF;
+    -webkit-box-shadow: 1px 0 0 #FAFDFC;
+    -moz-box-shadow: 1px 0 0 #FAFDFC;
+    box-shadow: 1px 0 0 #FAFDFC;
+}
+
+#featured #nav li p {
+    display: none;
+    font-size: .75em;
+    font-style: italic;
+}
+
+#featured #nav li.activeSlide a {
+    color: #34AC98;
+    background: #D9EFEC;
+    text-shadow: 0 1px 0 #FAFDFC;
+}
+
+#newsletter input#email {
+    width: 160px;
+}
+
+#recent {
+    width: 100%;
+    clear: both;
+    margin-bottom: 18px;
+    overflow: hidden;
+}
+
+#recent article {
+    float: left;
+    width: 160px;
+    margin: 0 24px 25px 0;
+}
+
+#recent article h1 {
+    margin: 10px 0 10px;
+    line-height: 1.3em;
+}
+
+#recent article p {
+    font-size: .875em;
+    line-height: 1.45em;
+}
+
+#recent article p.meta {
+    margin-top: 10px;
+    color: #AAA;
+}
+
+#recent article:nth-child(4) {
+    margin-right: 0;
+}
+
+aside[role="social"] section h1 {
+    margin: 0 0 9px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    font-size: .75em;
+    border-bottom: 1px dashed #E5E5E5;
+}
+
+aside[role="social"] section p {
+    margin-bottom: 15px;
+    line-height: 1.75em;
+    font-size: .6825em;
+    font-style: italic;
+    overflow: hidden;
+}
+
+aside[role="social"] {
+    position: absolute;
+    top: 452px;
+    left: 0;
+    width: 160px;
+}
+
+aside[role="social"] section {
+    display: block;
+    margin-bottom: 32px;
+    padding-right: 20px;
+}
+
+aside[role="social"] a.button {
+    width: 110px;
+    height: 24px;
+    padding: 7px 0px 5px 28px;
+    background: no-repeat 6px 6px;
+}
+
+aside .twitter a.button {
+    background-image: url(../images/icon-twitter-16.png);
+}
+
+aside .facebook a.button {
+    background-image: url(../images/icon-facebook-16.png);
+}
+
+footer[role="siteinfo"] {
+    clear: both;
+    position: relative;
+    min-height: 70px;
+    padding-top: 20px;
+    border-top: 2px solid #E5E5E5;
+    color: #AAA;
+}
+
+footer[role="siteinfo"] p {
+    line-height: 1.5em;
+    font-size: .75em;
+}
+
+footer[role="siteinfo"] .social {
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+footer .social li {
+    float: left;
+    display: inline;
+    margin-left: 5px;
+}
+
+footer .social li a {
+    display: block;
+    width: 32px;
+    height: 32px;
+    text-indent: -999em;
+    opacity: .4;
+}
+
+footer .twitter a {
+    background: url(../images/icon-twitter.png) no-repeat 50% 1px;
+}
+
+footer .facebook a {
+    background: url(../images/icon-facebook.png) no-repeat 50% 0;
+}
+
+footer .rss a {
+    background: url(../images/icon-rss.png) no-repeat 50% 0;
+}
+
+@media only screen and (min-width: 1176px) {
+    body {
+        width: 1080px;
+    }
+    #content {
+        float: right;
+        width: 896px;
+    }
+    #featured {
+        height: 560px;
+    }
+    #featured #nav {
+        top: 445px;
+        width: 896px;
+    }
+    #featured #nav li {
+        text-align: left;
+    }
+    #featured #nav a {
+        width: 224px;
+        height: 60px;
+        padding: 25px 12px 60px 20px;
+    }
+    #featured #nav li p {
+        display: inline;
+    }
+    #newsletter input#email {
+        width: 260px;
+    }
+    #recent article {
+        width: 205px;
+    }
+}
+
+
+/* max width 1176 */
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    body {
+        width: 712px;
+    }
+    header[role="masthead"] {
+        width: 712px;
+        margin-bottom: 20px;
+        float: none;
+    }
+    #content {
+        position: relative;
+        width: 712px;
+        float: none;
+    }
+    nav {
+        position: absolute;
+        top: 70px;
+        left: auto;
+        right: 0;
+        width: 528px;
+        margin: 0;
+    }
+    nav li {
+        display: inline-block;
+    }
+    nav li a {
+        background-position: 50% 0;
+    }
+    nav a {
+        display: inline;
+        padding: 40px 15px 0 15px;
+    }
+    h1#branding {
+        margin: 0 0 20px 0;
+    }
+    aside[role="social"] {
+        display: none;
+    }
+}
+
+
+/* end of max 991 min 768 */
+
+
+
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+    body {
+        width: 480px;
+        padding: 0;
+    }
+    header[role="masthead"] {
+    width: 100%;
+    margin: 20px 0;
+}
+header h1#branding {
+    margin-left: 20px;
+}
+nav {
+    top: 65px;
+    left: auto;
+    right: 25px;
+    width: 315px;
+    height: 20px;
+    font-size: .75em;
+    background: transparent;
+    border-bottom: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    margin-top:0px;
+    position:absolute;
+}
+nav ul {
+    position: absolute;
+    right: 0;
+}
+nav li {
+    display: inline;
+    margin: 0;
+}
+nav a {
+    float: left;
+    margin: 0 0 0 4px;
+    padding: 5px 5px 0 5px;
+}
+nav li#tastemakers a, nav li#blog a, nav li#vendors a, nav li#contribute a, nav li#about a {
+    background-image: none;
+}
+
+#content{
+    width:100%;
+}
+#featured {
+    height: 310px;
+}
+#featured img {
+    height: 310px;
+}
+#cover a {
+    bottom: 0;
+    width:100%;
+}
+#cover a h1 {
+    padding: 7px 15px 7px;
+    font-size: 1em;
+}
+#cover a h2 {
+
+    padding: 10px 15px 10px;
+    font-weight: normal;
+    font-size: 0.65em;
+    
+}
+#newsletter p {
+   width:100%;
+}
+#newsletter input#email {
+    width: 300px;
+}
+#newsletter fieldset {
+    
+    padding-left: 20px;
+}
+
+#featured #nav {
+    display: none;
+}
+
+#recent {
+    width: 456px;
+}
+#recent article {
+    width: 216px;
+    margin-right: 24px;
+}
+#recent article:nth-child(2) {
+    margin-right: 0;
+}
+
+aside[role="social"] {
+   display:none;
+}
+
+}
+
+
+
+@media only screen and (max-width: 479px){
+
+body {
+    width: 320px;
+    padding: 0;
+}
+
+header[role="masthead"] {
+    width: 100%;
+    margin: 69px 0 20px;
+}
+
+header h1#branding {
+    margin: 0 auto;
+}
+
+nav {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 25px;
+    font-size: .75em;
+    border-bottom: 1px solid #E5E5E5;
+    -webkit-box-shadow: 0 1px 0 #F5F5F5;
+    -moz-box-shadow: 0 1px 0 #F5F5F5;
+    box-shadow: 0 1px 0 #F5F5F5;
+    position:absolute;
+}
+nav li {
+    display: inline;
+    margin: 0;
+}
+nav li a{
+    display:inline;
+    padding-left:12px;
+}
+nav li#tastemakers a, nav li#blog a, nav li#vendors a, nav li#contribute a, nav li#about a {
+    background-image: none;
+}
+#content{
+    width:100%;
+}
+#featured {
+    height: 310px;
+}
+#featured img {
+    height: 310px;
+}
+#cover a {
+    bottom: 0;
+    width:100%;
+}
+#cover a h1 {
+    padding: 7px 15px 7px;
+    font-size: 1em;
+}
+#cover a h2 {
+
+    padding: 10px 15px 10px;
+    font-weight: normal;
+    font-size: 0.65em;
+    
+}
+
+#newsletter p {
+   width:100%;
+}
+#newsletter input#email {
+    width: 100%;
+}
+#newsletter fieldset {
+    
+    padding-left: 20px;
+}
+#recent article {
+    width: 280px;
+    margin-right: 0px;
+}
+
+
+aside[role="social"] {
+   display:none;
+}
+#featured #nav {
+    display: none;
+}
+#newsletter {
+  
+    padding: 5px 0px 10px 0;
+    margin-top: 20px;
+}
+
+#recent article {
+    float: left;
+    width: 160px;
+    margin: 0 24px 25px 0;
+}
+#recent article {
+    width: 100%;
+    margin-right: 0px;
+}
+#recent article a img {
+    float: left;
+    width: 100%;
+    margin: 0 24px 25px 0;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+

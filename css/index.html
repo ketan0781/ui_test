@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style type="text/css">
+	    div#color-patlet {
+	        width: 300px;
+	        height: 300px;
+	        border: 1px solid;
+	        margin: 0 auto 20px auto;
+	        background-color:#fff;
+	        transition:background 2s;
+	    }
+	    ul#list_of_color {
+		    width: 300px;
+		    margin: 0 auto;
+		    padding: 0px;
+
+		    
+		}
+		ul#list_of_color li {
+		    display: inline-block;
+		    width: 32%;
+		    box-sizing: border-box;
+		    margin: 0;
+		    padding: 0;
+		    border: 1px solid;
+		    height: 150px;
+		}
+		#red{
+			background-color:red;
+		}
+		#blue{
+			background-color:blue;
+		}
+		#green{
+			background-color:green;
+		}
+		#orange{
+			background-color:orange;
+		}
+		#gray{
+			background-color:gray;
+		}
+		#purple{
+			background-color:purple;
+		}
+		.active{
+			border:1px solid ;
+		}
+
+
+
+    </style>
+</head>
+
+<body>
+    <div id="color-patlet">
+    </div>
+    <ul id="list_of_color">
+        <li id="red" onclick="change('red')"></li>
+        <li id="blue" onclick="change('blue')"></li>
+        <li id="green" onclick="change('green')"></li>
+        <li id="orange" onclick="change('orange')"></li>
+        <li id="purple" onclick="change('purple')"></li>
+        <li id="gray" onclick="change('gray')"></li>
+    </ul>
+    <script type="text/javascript">
+
+   function change(clr){
+
+   		var body = document.getElementById('color-patlet');
+   		body.style.background = clr;
+   }
+
+   
+
+
+
+
+    </script>
+</body>
+
+</html>

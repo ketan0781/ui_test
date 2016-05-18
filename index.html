@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BOA task</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="wrap">
+        <header role="masthead">
+            <h1 id="branding">Food Sense</h1>
+            <nav>
+                <ul>
+                    <li id="tastemakers"><a href="#">Tastemakers</a></li>
+                    <li id="blog"><a href="#">Blog</a></li>
+                    <li id="vendors"><a href="#">The A-List</a></li>
+                    <li id="contribute"><a href="#">Contribute</a></li>
+                    <li id="about"><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="content">
+            <section id="featured">
+                <div id="cover">
+                    <a href="http://foodsense.is/tastemakers">
+                        <h1>What's Cooking? </h1>
+                        <h2>Browse our gallery for dependably delicious recipes. </h2>
+                    </a>
+                    <img src="images/0140_foodsense.jpg" alt="foodsense">
+                    
+                </div>
+                <div id="nav">
+                    <ul>
+                        <li id="feature-1" class="activeSlide"><a href="/tastemakers"><h3>Tastemakers</h3><p>Feast your eyes &amp; get recipes!</p></a></li>
+                        <li id="feature-2" class=""><a href="/blog"><h3>Blog</h3><p>News, how-tos, stories, and more</p></a></li>
+                        <li id="feature-3" class=""><a href="/a-list"><h3>The A-List</h3><p>Handpicked, absolute favorites</p></a></li>
+                        <li id="feature-4" class=""><a href="/contribute"><h3>Contribute</h3><p>We want to hear from you!</p></a></li>
+                    </ul>
+                </div>
+            </section>
+            <section id="newsletter">
+                <p>Sign up for our newsletter to receive a handpicked selection of the best stories, recipes, and news, delivered weekly to your inbox.</p>
+                <form action="#">
+                    <fieldset>
+                        <label for="email" class="hide">Email</label>
+                        <input type="email" id="email" name="EMAIL" placeholder="Email">
+                    </fieldset>
+                    <fieldset class="submit">
+                        <input type="submit" value="Subscribe" name="subscribe">
+                    </fieldset>
+                </form>
+            </section>
+            <section ng-app="myApp" ng-controller="myCtrl" id="recent" class="blog">
+                <article ng-repeat="item in items">
+                    <a href="#"><img ng-src="{{'images/' + item.image}}" class="border" alt="image">
+                        <h1>{{item.title}}</h1></a>
+                    <p>{{item.summary}}</p>
+                    <p class="meta">
+                        <time datetime="2012-05-23T02:41-05:00" pubdate="">{{item.date}}</time> / <a href="http://foodsense.is/blog/2012s-best-summer-cookbooks">Read »</a></p>
+                </article>
+            </section>
+        </div>
+        <!-- #content -->
+        <aside role="social">
+            <section class="twitter">
+                <h1>Latest Tweet</h1>
+                <p><a href="#" class="button">Join the Conversation</a></p>
+            </section>
+            <section class="facebook">
+                <h1>Let's be friends!</h1>
+                <p>For weekly finds, community recommendations, and more, like us on Facebook.</p>
+                <p><a href="#" class="button">Join the Community</a></p>
+            </section>
+        </aside>
+        <footer role="siteinfo">
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <span id="eeEncEmail_MpxSzVLGem"><a href="mailto:hello@foodsense.is">Contact</a></span>
+                <br>© 2016 Food Sense, all rights reserved.</p>
+            <div class="social">
+                <ul>
+                    <li class="twitter"><a href="http://twitter.com/getfoodsense">Twitter</a></li>
+                    <li class="facebook"><a href="http://www.facebook.com/getfoodsense">Facebook</a></li>
+                    <li class="rss"><a href="http://foodsense.is/rss">Subscribe via RSS</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <!-- #wrap -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
